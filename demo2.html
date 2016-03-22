@@ -101,7 +101,7 @@
             if((typeof value != 'undefined' && value) && value.length > 0){
                 // 判断值是否在4-6范围之间
                 // 确保填写的是字符串 而不是其它
-                if((value.length >= 4 && value.length <= 6) && typeof value.valueOf() == 'string'){
+                if((value.length >= 4 && value.length <= 16) && typeof value.valueOf() == 'string'){
                     form.className = 'is-ok';
                     tips.innerHTML = '名称格式正确';
                 }else {
